@@ -1,0 +1,22 @@
+<div class="container">
+  <div class="row">
+    <div class="col-sm-8 col-sm-offset-2">
+      <article>
+        <h1>
+          <%= @article.title %>
+          <small>
+            <%= link_to article_path(@article), method: :delete do %>
+              <i class="fa fa-trash"></i>
+            <% end %>
+            <%= link_to edit_article_path(@article) do %>
+              <i class="fa fa-edit"></i>
+            <% end %>
+          </small>
+        </h1>
+
+        <hr>
+
+      </article>
+    </div>
+  </div>
+</div>
